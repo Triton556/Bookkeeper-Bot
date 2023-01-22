@@ -1,9 +1,10 @@
 import {Telegraf} from "telegraf";
+import {commands} from "./commands";
 require('dotenv').config()
 
 const bot = new Telegraf(process?.env.BOT_TOKEN!);
-bot.start((ctx) => ctx.reply('Welcome'));
-bot.help((ctx) => ctx.reply('Send me a sticker'));
+bot.start((ctx) => ctx.reply(`Hi ${ctx.message.from.first_name ?? 'stranger'}`));
+bot.help((ctx) => ctx.reply(commands));
 
 bot.launch();
 
