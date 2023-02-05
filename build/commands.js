@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = require("./index");
+exports.botCommands = void 0;
 const commandsHelp = `
 /start - Запуск бота
 /help - Посмотреть все команды
 `;
-const botCommands = [
+exports.botCommands = [
     { command: '/start', description: 'Начальное приветствие' },
-    { command: '/info', description: 'Получить информацию' }
+    { command: '/info', description: 'Получить информацию' },
+    { command: '/game', description: 'Игра угадай цифру' }
 ];
-index_1.bot.setMyCommands(botCommands);
