@@ -1,4 +1,4 @@
-import {CallbackQuery, Message, SendBasicOptions} from "node-telegram-bot-api";
+import {CallbackQuery, Message} from "node-telegram-bot-api";
 import {botCommands} from "./commands";
 import {againOptions, gameOptions} from "./options";
 
