@@ -5,9 +5,9 @@ const commandsHelp = `
 /help - Посмотреть все команды
 `
 
-const botCommands = [
+export const botCommands = [
     {command: '/start', description: 'Начальное приветствие'},
-    {command: '/info', description: 'Получить информацию'}
+    {command: '/info', description: 'Получить информацию'},
+    {command: '/game', description: 'Игра угадай цифру'}
 ]
 
-bot.setMyCommands(botCommands)
