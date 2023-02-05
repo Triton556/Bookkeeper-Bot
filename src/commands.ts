@@ -1,4 +1,3 @@
-import {bot} from "./index";
 
 const commandsHelp = `
 /start - Запуск бота
