@@ -7,7 +7,7 @@
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
     "start": "concurrently npm:start:*",
-    "pm2": "pm2 start build/index.js"
+    "pm2": "pm2 nodemon build/index.js"
   },
   "keywords": [],
   "author": "",
